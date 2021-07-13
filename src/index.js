@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-                //JSX Expression     //WHERE TO SHOW
+                 //JSX Expression     //WHERE TO SHOW
 // ReactDOM.render(<h1>Hello World</h1>,document.getElementById('root'));
+
+const fname = "talha";
+const lname = "Ishaq";
+const date = new Date().toLocaleDateString();
+const time = new Date().toLocaleTimeString();
 
 ReactDOM.render(
     <>
-    <h1>NETFLIX</h1>
-    <p>List of of top 5 netflix shows</p>
-    <ol>
-        <li>Stranger Things.</li>
-        <li>Into the night.</li>
-        <li>The Holo Love.</li>
-        <li>Money Heist.</li>
-        <li>Dark.</li>
-    </ol>
+    <h1>Hello, My Name is {fname +" "+ lname}</h1>
+    <p>Current Date = {date}</p>
+    <p>Current Time = {time}</p>
     </>,
-    document.getElementById('root'))
+    document.getElementById('root')
+);
+ 
